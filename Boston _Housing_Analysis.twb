@@ -1,0 +1,1140 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='BostonHousingData' inline='true' name='federated.1ojj4hh1rhqzww18gzjr11vdc5ld' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BostonHousingData' name='textscan.00ml57b0fybltg12aq6m40sh8uuh'>
+            <connection class='textscan' directory='C:/Users/perpe/Documents/Flatiron/Project/Housing_Data_Analysis' filename='BostonHousingData.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.00ml57b0fybltg12aq6m40sh8uuh' name='BostonHousingData.csv' table='[BostonHousingData#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='CRIM' ordinal='0' />
+            <column datatype='real' name='ZN' ordinal='1' />
+            <column datatype='real' name='INDUS' ordinal='2' />
+            <column datatype='integer' name='CHAS' ordinal='3' />
+            <column datatype='real' name='NOX' ordinal='4' />
+            <column datatype='real' name='RM' ordinal='5' />
+            <column datatype='real' name='AGE' ordinal='6' />
+            <column datatype='real' name='DIS' ordinal='7' />
+            <column datatype='integer' name='RAD' ordinal='8' />
+            <column datatype='integer' name='TAX' ordinal='9' />
+            <column datatype='real' name='PTRATIO' ordinal='10' />
+            <column datatype='real' name='B' ordinal='11' />
+            <column datatype='real' name='LSTAT' ordinal='12' />
+            <column datatype='real' name='MEDV' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.00ml57b0fybltg12aq6m40sh8uuh' name='BostonHousingData.csv' table='[BostonHousingData#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='CRIM' ordinal='0' />
+            <column datatype='real' name='ZN' ordinal='1' />
+            <column datatype='real' name='INDUS' ordinal='2' />
+            <column datatype='integer' name='CHAS' ordinal='3' />
+            <column datatype='real' name='NOX' ordinal='4' />
+            <column datatype='real' name='RM' ordinal='5' />
+            <column datatype='real' name='AGE' ordinal='6' />
+            <column datatype='real' name='DIS' ordinal='7' />
+            <column datatype='integer' name='RAD' ordinal='8' />
+            <column datatype='integer' name='TAX' ordinal='9' />
+            <column datatype='real' name='PTRATIO' ordinal='10' />
+            <column datatype='real' name='B' ordinal='11' />
+            <column datatype='real' name='LSTAT' ordinal='12' />
+            <column datatype='real' name='MEDV' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CRIM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CRIM]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>CRIM</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZN</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ZN]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>ZN</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>INDUS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[INDUS]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>INDUS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CHAS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CHAS]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>CHAS</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NOX</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NOX]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>NOX</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RM]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>RM</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AGE]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>AGE</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIS</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DIS]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>DIS</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RAD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RAD]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>RAD</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TAX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TAX]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>TAX</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PTRATIO</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PTRATIO]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>PTRATIO</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[B]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>B</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LSTAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LSTAT]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>LSTAT</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MEDV</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[MEDV]</local-name>
+            <parent-name>[BostonHousingData.csv]</parent-name>
+            <remote-alias>MEDV</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[AGE (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[AGE]' peg='0' size='3.97' />
+      </column>
+      <column datatype='real' name='[AGE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[B (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[B]' peg='0' size='16.1' />
+      </column>
+      <column datatype='real' name='[B]' role='measure' type='quantitative' />
+      <column caption='Chas' datatype='integer' name='[CHAS]' role='measure' type='quantitative' />
+      <column caption='Crim' datatype='real' name='[CRIM]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Crim (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[CRIM]' peg='0' size='3.3' />
+      </column>
+      <column caption='Indus' datatype='real' name='[INDUS]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Indus (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[INDUS]' peg='0' size='1.84' />
+      </column>
+      <column caption='Lstat' datatype='real' name='[LSTAT]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Lstat (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[LSTAT]' peg='0' size='1.38' />
+      </column>
+      <column caption='Medv' datatype='real' name='[MEDV]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Medv (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[MEDV]' peg='0' size='2.09' />
+      </column>
+      <column caption='Ptratio' datatype='real' name='[PTRATIO]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[RM (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[RM]' peg='0' size='0.198' />
+      </column>
+      <column datatype='real' name='[RM]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[TAX (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[TAX]' peg='0' size='37.4' />
+      </column>
+      <column datatype='integer' name='[TAX]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='BostonHousingData.csv' datatype='table' name='[__tableau_internal_object_id__].[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/perpe/AppData/Local/Temp/TableauTemp/#TableauTemp_1lzwq6k1q8lspz119dd320k3x7w6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/12/2024 07:40:30 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CRIM</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CRIM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CRIM</remote-alias>
+              <ordinal>0</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>485</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ZN</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ZN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ZN</remote-alias>
+              <ordinal>1</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>INDUS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[INDUS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>INDUS</remote-alias>
+              <ordinal>2</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>77</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CHAS</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CHAS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CHAS</remote-alias>
+              <ordinal>3</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NOX</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NOX]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NOX</remote-alias>
+              <ordinal>4</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RM</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RM</remote-alias>
+              <ordinal>5</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>446</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AGE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[AGE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AGE</remote-alias>
+              <ordinal>6</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>349</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DIS</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[DIS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DIS</remote-alias>
+              <ordinal>7</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>412</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RAD</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RAD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RAD</remote-alias>
+              <ordinal>8</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TAX</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TAX]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TAX</remote-alias>
+              <ordinal>9</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PTRATIO</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[PTRATIO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PTRATIO</remote-alias>
+              <ordinal>10</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>B</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>B</remote-alias>
+              <ordinal>11</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>357</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LSTAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LSTAT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LSTAT</remote-alias>
+              <ordinal>12</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>439</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MEDV</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[MEDV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MEDV</remote-alias>
+              <ordinal>13</ordinal>
+              <family>BostonHousingData.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>229</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Kenya&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='BostonHousingData.csv' id='BostonHousingData.csv_CB415CCC8E8943FF988798DDC552F608'>
+            <properties context=''>
+              <relation connection='textscan.00ml57b0fybltg12aq6m40sh8uuh' name='BostonHousingData.csv' table='[BostonHousingData#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='CRIM' ordinal='0' />
+                  <column datatype='real' name='ZN' ordinal='1' />
+                  <column datatype='real' name='INDUS' ordinal='2' />
+                  <column datatype='integer' name='CHAS' ordinal='3' />
+                  <column datatype='real' name='NOX' ordinal='4' />
+                  <column datatype='real' name='RM' ordinal='5' />
+                  <column datatype='real' name='AGE' ordinal='6' />
+                  <column datatype='real' name='DIS' ordinal='7' />
+                  <column datatype='integer' name='RAD' ordinal='8' />
+                  <column datatype='integer' name='TAX' ordinal='9' />
+                  <column datatype='real' name='PTRATIO' ordinal='10' />
+                  <column datatype='real' name='B' ordinal='11' />
+                  <column datatype='real' name='LSTAT' ordinal='12' />
+                  <column datatype='real' name='MEDV' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Histogram of Crime Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Histogram of Crime Rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BostonHousingData' name='federated.1ojj4hh1rhqzww18gzjr11vdc5ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ojj4hh1rhqzww18gzjr11vdc5ld'>
+            <column caption='Crim' datatype='real' name='[CRIM]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Crim (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[CRIM]' peg='0' size='3.3' />
+            </column>
+            <column-instance column='[CRIM]' derivation='Count' name='[cnt:CRIM:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crim (bin)]' derivation='None' name='[none:Crim (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[cnt:CRIM:qk]</rows>
+        <cols>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:Crim (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[Crim (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{C4C15F9B-D698-4FB0-908D-B6BCA8BC467A}' />
+    </worksheet>
+    <worksheet name='Histogram of Housing Prices'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Histogram of Housing Prices</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BostonHousingData' name='federated.1ojj4hh1rhqzww18gzjr11vdc5ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ojj4hh1rhqzww18gzjr11vdc5ld'>
+            <column caption='Medv' datatype='real' name='[MEDV]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Medv (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[MEDV]' peg='0' size='2.09' />
+            </column>
+            <column-instance column='[MEDV]' derivation='Count' name='[cnt:MEDV:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Medv (bin)]' derivation='None' name='[none:Medv (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[cnt:MEDV:qk]</rows>
+        <cols>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:Medv (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[Medv (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{9DD48769-6F92-469F-8E51-14497BCA6568}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BostonHousingData' name='federated.1ojj4hh1rhqzww18gzjr11vdc5ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ojj4hh1rhqzww18gzjr11vdc5ld'>
+            <column caption='Lstat' datatype='real' name='[LSTAT]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Lstat (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[LSTAT]' peg='0' size='1.38' />
+            </column>
+            <column-instance column='[LSTAT]' derivation='Count' name='[cnt:LSTAT:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Lstat (bin)]' derivation='None' name='[none:Lstat (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[cnt:LSTAT:qk]</rows>
+        <cols>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:Lstat (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[Lstat (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7ADCDE4F-5D6E-47B0-92DB-064FAB257C69}' />
+    </worksheet>
+    <worksheet name='Tax Histogram'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Tax Histogram</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BostonHousingData' name='federated.1ojj4hh1rhqzww18gzjr11vdc5ld' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ojj4hh1rhqzww18gzjr11vdc5ld'>
+            <column datatype='integer' name='[TAX (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='1' formula='[TAX]' peg='0' size='37.4' />
+            </column>
+            <column datatype='integer' name='[TAX]' role='measure' type='quantitative' />
+            <column-instance column='[TAX]' derivation='Count' name='[cnt:TAX:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[TAX (bin)]' derivation='None' name='[none:TAX (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[cnt:TAX:qk]</rows>
+        <cols>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:TAX (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:TAX (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{A1FAD2A1-6482-4376-B7A9-E4410A60FDFD}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Histogram of Housing Prices'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{609CA0C1-8E80-44E5-B443-EF5D863EFEBA}' />
+    </window>
+    <window class='worksheet' name='Histogram of Crime Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[:Measure Names]</field>
+            <field>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:AGE (bin):qk]</field>
+            <field>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:Medv (bin):qk]</field>
+            <field>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:RM (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{609A9793-C228-4892-8292-529697C48194}' />
+    </window>
+    <window class='worksheet' name='Tax Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='37'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:B (bin):qk]</field>
+            <field>[federated.1ojj4hh1rhqzww18gzjr11vdc5ld].[none:TAX (bin):qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BA2FAFAB-F39B-4169-836E-6D4E1DB6B699}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{49EDFDCF-9145-42F0-B792-9AAC70E7BDC7}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Histogram of Crime Rate' width='192'>
+      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
+      AEJp/wsVhwULl5NCZgAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Histogram of Housing Prices' width='192'>
+      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
+      qf0fTrSeV9FBZ94AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Tax Histogram' width='192'>
+      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
+      7amB5jXJDrMAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
